@@ -18,9 +18,9 @@ const SearchCard = () => {
         <SearchCardNavItem>Packages</SearchCardNavItem>
       </SearchCardNavBar>
       <SearchBarsContainer>
-        <SearchBar />
-        <SearchBar />
-        <SearchBar />
+        <SearchBar text="Going to" />
+        <SearchBar text="Dates" />
+        <SearchBar text="Travelers" />
         <SearchButton />
       </SearchBarsContainer>
     </SearchCardContainer>

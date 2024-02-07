@@ -25,6 +25,7 @@ export const SearchCardNavBar = styled.div`
 export const SearchCardNavItem = styled.div`
   padding: 10px;
   color: black;
+  font-weight: 500;
 `;
 
 export const SearchBarsContainer = styled.div`
@@ -32,5 +33,4 @@ export const SearchBarsContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 `;

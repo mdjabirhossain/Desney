@@ -9,7 +9,8 @@ export const SearchContainer = styled.div`
   justify-content: start;
   align-items: center;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
+  font-weight: 400;
 `;
 
 export const SearchInput = styled.div`
