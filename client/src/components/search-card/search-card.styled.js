@@ -9,6 +9,7 @@ export const SearchCardContainer = styled.div`
   height: 200px;
   border: 1px solid rgb(211, 211, 211);
   border-radius: 10px;
+  margin-top: 100px;
   // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 `;
 
@@ -25,7 +26,8 @@ export const SearchCardNavBar = styled.div`
 export const SearchCardNavItem = styled.div`
   padding: 10px;
   color: black;
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 13px;
 `;
 
 export const SearchBarsContainer = styled.div`
