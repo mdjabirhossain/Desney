@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import theme from "../../themes/theme";
+
+const { colors } = theme;
 
 export const SearchCardContainer = styled.div`
   display: flex;
@@ -28,6 +31,10 @@ export const SearchCardNavItem = styled.div`
   color: black;
   font-weight: 800;
   font-size: 13px;
+  cursor: pointer;
+  color: ${(props) => (props.active ? colors.primary : colors.secondary)};
+  border-bottom: ${(props) =>
+    props.active ? `2px solid ${colors.primary}` : "none"};
 `;
 
 export const SearchBarsContainer = styled.div`

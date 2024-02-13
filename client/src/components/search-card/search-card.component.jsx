@@ -1,28 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SearchCardContainer,
   SearchCardNavBar,
   SearchCardNavItem,
-  SearchBarsContainer,
 } from "./search-card.styled";
-import SearchBar from "../search-bar/search-bar.component";
-import SearchButton from "../search-button/search-button.component";
+import Stays from "../stays/stays.component";
+import Flights from "../flights/flights.component";
+import Cars from "../cars/cars.component";
+import Packages from "../packages/packages.component";
+
+// there is an active status for a div
 
 const SearchCard = () => {
+  const [activeTab, setActiveTab] = useState("Stays");
+
+  const handleToggle = (tabName) => {
+    setActiveTab(tabName);
+  };
+
   return (
     <SearchCardContainer>
       <SearchCardNavBar>
-        <SearchCardNavItem>Stays</SearchCardNavItem>
-        <SearchCardNavItem>Flights</SearchCardNavItem>
-        <SearchCardNavItem>Cars</SearchCardNavItem>
-        <SearchCardNavItem>Packages</SearchCardNavItem>
+        <SearchCardNavItem
+          active={activeTab === "Stays"}
+          onClick={() => handleToggle("Stays")}
+        >
+          Stays
+        </SearchCardNavItem>
+        <SearchCardNavItem
+          active={activeTab === "Flights"}
+          onClick={() => handleToggle("Flights")}
+        >
+          Flights
+        </SearchCardNavItem>
+        <SearchCardNavItem
+          active={activeTab === "Cars"}
+          onClick={() => handleToggle("Cars")}
+        >
+          Cars
+        </SearchCardNavItem>
+        <SearchCardNavItem
+          active={activeTab === "Packages"}
+          onClick={() => handleToggle("Packages")}
+        >
+          Packages
+        </SearchCardNavItem>
       </SearchCardNavBar>
-      <SearchBarsContainer>
-        <SearchBar text="Going to" />
-        <SearchBar text="Dates" />
-        <SearchBar text="Travelers" />
-        <SearchButton />
-      </SearchBarsContainer>
+      {(activeTab == "Stays" && <Stays />) ||
+        (activeTab == "Flights" && <Flights />) ||
+        (activeTab == "Cars" && <Cars />) ||
+        (activeTab == "Packages" && <Packages />)}
     </SearchCardContainer>
   );
 };

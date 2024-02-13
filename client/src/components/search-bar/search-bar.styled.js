@@ -11,14 +11,14 @@ export const SearchContainer = styled.div`
   padding: 10px;
   margin: 10px;
   font-weight: 400;
+  cursor: pointer;
 `;
 
+export const SearchIcon = styled.div``;
 export const SearchInput = styled.div`
   margin-top: 20px;
-  padding: 10px;
   margin-bottom: 20px;
-  width: 500px;
+  width: 100px;
   height: 100%;
-  color: white;
-  border-radius: 10px;
+  color: black;
 `;
