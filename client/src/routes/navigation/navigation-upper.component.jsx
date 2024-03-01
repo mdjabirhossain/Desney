@@ -6,19 +6,37 @@ import {
   DesineyLogoLink,
   NavUpperItems,
   NavUpperLink,
+  SiginContainer,
+  SigninLogo,
+  SigninLink,
 } from "./navigation-upper.styled";
+import { CgProfile } from "react-icons/cg";
+import { PiTwitterLogoLight } from "react-icons/pi";
+import { PiTwitterLogoDuotone } from "react-icons/pi";
+import theme from "../../themes/theme";
 
+const { colors } = theme;
 const NavigationUpperBar = () => {
   return (
     <>
       <NavigationUpper>
-        <DesineyLogoLink>Desiney</DesineyLogoLink>
+        <DesineyLogoLink>
+          <PiTwitterLogoDuotone size={32} color={colors.primary} />
+        </DesineyLogoLink>
         <NavigationUpperContainer>
           <NavUpperItems>
-            <NavUpperLink>Support</NavUpperLink>
+            <NavUpperLink>Explore</NavUpperLink>
             <NavUpperLink>Trips</NavUpperLink>
+            <NavUpperLink>Support</NavUpperLink>
+            <NavUpperLink>Tips</NavUpperLink>
           </NavUpperItems>
         </NavigationUpperContainer>
+        <SiginContainer>
+          <SigninLogo>
+            <CgProfile size={25} />
+          </SigninLogo>
+          <SigninLink>Sign in</SigninLink>
+        </SiginContainer>
       </NavigationUpper>
       <Outlet />
     </>

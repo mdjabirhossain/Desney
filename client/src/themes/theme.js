@@ -3,9 +3,9 @@ export default {
   fonts: {
     // title: "Space Grotesk, sans-serif",
     // main: "Space Grotesk, sans-serif",
-    title: "Roboto Condensed",
-    main: "Space Grotesk, sans-serif",
-    button: "Roboto",
+    title: "Lato",
+    main: "Lato",
+    button: "Lato",
   },
   // Colors for layout
   colors: {
@@ -16,13 +16,13 @@ export default {
     background2: "#19212C",
     text: "#FFFFFF",
     text1: "#F2F5F7",
-    text2: "#626970",
+    text2: "#000000",
     text3: "#575C66",
     footerBackground: "#00012B",
   },
 
   sizes: {
-    discoverIcon: 32,
+    discoverIcon: 50,
   },
   //   // Breakpoints for responsive design
   //   breakpoints: {

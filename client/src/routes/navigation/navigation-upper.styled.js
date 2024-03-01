@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import theme from "../../themes/theme";
+
+const { colors } = theme;
+
 export const NavigationUpper = styled.div`
   background-color: white;
   //   border-bottom: 1px solid black;
@@ -21,7 +25,7 @@ export const NavigationUpper = styled.div`
 export const NavigationUpperContainer = styled.div`
   margin-left: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 60px;
   z-index: 1;
@@ -30,7 +34,14 @@ export const NavigationUpperContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const DesineyLogoLink = styled(Link)``;
+export const DesineyLogoLink = styled(Link)`
+  color: ${colors.text2};
+  text-decoration: none;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const NavUpperItems = styled.div`
   width: 100%;
@@ -38,7 +49,7 @@ export const NavUpperItems = styled.div`
   // border: 1px solid green;
   margin-right: 55px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 32px;
   padding: 0 6px;
@@ -72,7 +83,36 @@ export const NavUpperLink = styled(Link)`
   // :hover {
   //   color: ${({ theme }) => "red"};
   // }
-  &.hover {
-    color: "red";
+  color: ${colors.text2};
+  &:hover {
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
   }
+  height: 30px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SiginContainer = styled.div`
+  height: 40px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+`;
+
+export const SigninLogo = styled.div`
+  padding: 5px;
+  margin-top: 4px;
+`;
+
+export const SigninLink = styled(Link)`
+  color: ${colors.text2};
+  text-decoration: none;
+  padding: 5px;
 `;

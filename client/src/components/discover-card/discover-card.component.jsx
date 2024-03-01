@@ -32,11 +32,11 @@ const items = [
   "Hot tub",
   "Ocean view",
   "All inclusive",
-  "Cabin",
-  "Pet friendly",
-  "Boat",
-  "Chalet",
-  "Pool",
+  // "Cabin",
+  // "Pet friendly",
+  // "Boat",
+  // "Chalet",
+  // "Pool",
 ];
 
 const { sizes } = theme;
@@ -75,18 +75,18 @@ const icons = [
     size={sizes.discoverIcon}
     color={colors.primary}
   />,
-  <MdOutlinePets
-    key="pet-friendly"
-    size={sizes.discoverIcon}
-    color={colors.primary}
-  />,
-  <IoBoat key="boat" size={sizes.discoverIcon} color={colors.primary} />,
-  <MdChalet key="chalet" size={sizes.discoverIcon} color={colors.primary} />,
-  <FaPersonSwimming
-    key="swimming"
-    size={sizes.discoverIcon}
-    color={colors.primary}
-  />,
+  // <MdOutlinePets
+  //   key="pet-friendly"
+  //   size={sizes.discoverIcon}
+  //   color={colors.primary}
+  // />,
+  // <IoBoat key="boat" size={sizes.discoverIcon} color={colors.primary} />,
+  // <MdChalet key="chalet" size={sizes.discoverIcon} color={colors.primary} />,
+  // <FaPersonSwimming
+  //   key="swimming"
+  //   size={sizes.discoverIcon}
+  //   color={colors.primary}
+  // />,
 ];
 
 const DiscoverCard = () => {
